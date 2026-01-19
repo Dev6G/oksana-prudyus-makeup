@@ -192,6 +192,17 @@ function initGalleryModal() {
         const title = overlay ? overlay.querySelector('h4').textContent : 'Portfolio Image';
         const description = overlay ? overlay.querySelector('p').textContent : '';
         
+        // Check if item has an actual image or placeholder
+        const img = item.querySelector('img');
+        if (img && modalImage) {
+            modalImage.src = img.src;
+            modalImage.alt = title;
+            modalImage.style.display = 'block';
+        } else if (modalImage) {
+            // Hide image element if using placeholders
+            modalImage.style.display = 'none';
+        }
+        
         modal.classList.add('active');
         modalCaption.innerHTML = `<h3>${title}</h3><p>${description}</p>`;
         
@@ -214,6 +225,13 @@ function initGalleryModal() {
         const title = overlay ? overlay.querySelector('h4').textContent : 'Portfolio Image';
         const description = overlay ? overlay.querySelector('p').textContent : '';
         
+        // Update image if present
+        const img = item.querySelector('img');
+        if (img && modalImage) {
+            modalImage.src = img.src;
+            modalImage.alt = title;
+        }
+        
         modalCaption.innerHTML = `<h3>${title}</h3><p>${description}</p>`;
     }
     
@@ -226,6 +244,13 @@ function initGalleryModal() {
         const overlay = item.querySelector('.portfolio-overlay');
         const title = overlay ? overlay.querySelector('h4').textContent : 'Portfolio Image';
         const description = overlay ? overlay.querySelector('p').textContent : '';
+        
+        // Update image if present
+        const img = item.querySelector('img');
+        if (img && modalImage) {
+            modalImage.src = img.src;
+            modalImage.alt = title;
+        }
         
         modalCaption.innerHTML = `<h3>${title}</h3><p>${description}</p>`;
     }
