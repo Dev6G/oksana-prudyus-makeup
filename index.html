@@ -1,45 +1,643 @@
-<!-- index.html file content from commit 3c08939fcf5851add4274c905e9a05350aba7749 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Makeup Website</title>
+    <meta name="description" content="Professional makeup artistry courses and services by Oksana Prudyus. Learn from a master makeup artist with hands-on training.">
+    <meta name="keywords" content="makeup course, makeup artist, beauty training, professional makeup, bridal makeup">
+    <meta name="author" content="Oksana Prudyus">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Beauty Makeup by Oksana Prudyus | Professional Makeup Courses</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Oksana Prudyus Makeup</h1>
+    <!-- ========================================
+         Header
+         ======================================== -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Oksana Prudyus</h1>
+            </div>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#program" class="nav-link">Program</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#booking" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#booking" class="btn btn-primary" aria-label="Book a session">Book Now</a>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
-    <section id="hero">
-        <h2>Your Beauty, Our Passion</h2>
+
+    <!-- ========================================
+         Hero Section
+         ======================================== -->
+    <section class="hero fade-in" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-subtitle">Professional Makeup Artistry</p>
+            <h1 class="hero-title">Transform Your Passion Into Mastery</h1>
+            <p class="hero-tagline">Master the Art of Professional Makeup</p>
+            <p class="hero-description">
+                Join Oksana Prudyus, a renowned makeup artist with over 15 years of experience, 
+                and learn the techniques that have transformed thousands of faces and launched successful careers.
+            </p>
+            <div class="hero-buttons">
+                <a href="#program" class="btn btn-primary">Explore Courses</a>
+                <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+            </div>
+        </div>
     </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Oksana Prudyus Makeup is dedicated to helping you shine on your special day.</p>
+
+    <!-- ========================================
+         About Section
+         ======================================== -->
+    <section class="about fade-in" id="about">
+        <div class="container">
+            <h2 class="section-title">About Oksana Prudyus</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">
+                Award-winning makeup artist and educator with a passion for empowering aspiring artists
+            </p>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Professional Photo</p>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <p class="about-intro">
+                        Your Journey to Makeup Mastery Starts Here
+                    </p>
+                    <p>
+                        With over 15 years of professional experience in the beauty industry, I've had the privilege 
+                        of working with celebrities, bridal clients, editorial shoots, and fashion shows worldwide. 
+                        My journey has taken me from humble beginnings to becoming one of the most sought-after 
+                        makeup artists in the industry.
+                    </p>
+                    <p>
+                        Now, I'm dedicated to sharing my knowledge and techniques with aspiring makeup artists. 
+                        My comprehensive training program is designed to take you from beginner to professional, 
+                        providing you with the skills, confidence, and business knowledge needed to succeed in 
+                        this competitive field.
+                    </p>
+                    <p>
+                        My teaching philosophy combines technical expertise with artistic creativity, ensuring 
+                        that each student develops their unique style while mastering industry-standard techniques.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="about-highlights fade-in">
+                <div class="highlight-item">
+                    <i class="fas fa-award"></i>
+                    <h4>15+ Years</h4>
+                    <p>Professional Experience</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-users"></i>
+                    <h4>500+ Students</h4>
+                    <p>Successfully Trained</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-star"></i>
+                    <h4>Industry Expert</h4>
+                    <p>Award-Winning Artist</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="program">
-        <h2>Programs</h2>
-        <p>We offer various makeup programs tailored to your needs.</p>
+
+    <!-- ========================================
+         Program Section
+         ======================================== -->
+    <section class="program fade-in" id="program">
+        <div class="container">
+            <h2 class="section-title">Master Course Program</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">
+                A comprehensive 6-module curriculum designed to transform beginners into confident professionals
+            </p>
+            
+            <div class="program-content">
+                <!-- Module 1 -->
+                <div class="program-module">
+                    <div class="module-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Module 1: Foundations</h3>
+                    <ul>
+                        <li>Skin types and analysis</li>
+                        <li>Product knowledge and selection</li>
+                        <li>Tools and equipment essentials</li>
+                        <li>Color theory basics</li>
+                        <li>Hygiene and safety protocols</li>
+                    </ul>
+                </div>
+                
+                <!-- Module 2 -->
+                <div class="program-module">
+                    <div class="module-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Module 2: Face Mapping</h3>
+                    <ul>
+                        <li>Facial structure analysis</li>
+                        <li>Foundation application techniques</li>
+                        <li>Contouring and highlighting</li>
+                        <li>Color correction methods</li>
+                        <li>Skin preparation and priming</li>
+                    </ul>
+                </div>
+                
+                <!-- Module 3 -->
+                <div class="program-module">
+                    <div class="module-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Module 3: Eye Artistry</h3>
+                    <ul>
+                        <li>Eye shape analysis</li>
+                        <li>Eyeshadow blending techniques</li>
+                        <li>Eyeliner styles and application</li>
+                        <li>False lash application</li>
+                        <li>Eyebrow shaping and filling</li>
+                    </ul>
+                </div>
+                
+                <!-- Module 4 -->
+                <div class="program-module">
+                    <div class="module-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Module 4: Bridal Makeup</h3>
+                    <ul>
+                        <li>Bridal consultation process</li>
+                        <li>Long-lasting makeup techniques</li>
+                        <li>Photography-ready looks</li>
+                        <li>Trial sessions and contracts</li>
+                        <li>Managing wedding day timelines</li>
+                    </ul>
+                </div>
+                
+                <!-- Module 5 -->
+                <div class="program-module">
+                    <div class="module-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Module 5: Editorial & Fashion</h3>
+                    <ul>
+                        <li>Editorial makeup trends</li>
+                        <li>Creative and artistic looks</li>
+                        <li>Working on photo shoots</li>
+                        <li>High-fashion techniques</li>
+                        <li>Collaborating with photographers</li>
+                    </ul>
+                </div>
+                
+                <!-- Module 6 -->
+                <div class="program-module">
+                    <div class="module-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Module 6: Business</h3>
+                    <ul>
+                        <li>Building your brand</li>
+                        <li>Pricing and packages</li>
+                        <li>Marketing strategies</li>
+                        <li>Client management</li>
+                        <li>Portfolio development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Check out our work!</p>
+
+    <!-- ========================================
+         Portfolio Section
+         ======================================== -->
+    <section class="portfolio fade-in" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">
+                Explore our diverse collection of makeup artistry across various styles and occasions
+            </p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="evening">Evening</button>
+                <button class="filter-btn" data-filter="editorial">Editorial</button>
+                <button class="filter-btn" data-filter="natural">Natural</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item" data-category="bridal">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Romantic Bridal</h4>
+                        <p>Soft glam for a classic wedding look</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item" data-category="evening">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Evening Glam</h4>
+                        <p>Bold and dramatic for special events</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item" data-category="editorial">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Fashion Editorial</h4>
+                        <p>High-fashion magazine shoot</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item" data-category="natural">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Natural Beauty</h4>
+                        <p>Enhancing natural features</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item" data-category="bridal">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Destination Wedding</h4>
+                        <p>Beach wedding makeup perfection</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item" data-category="evening">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Red Carpet</h4>
+                        <p>Celebrity event makeup</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 7 -->
+                <div class="portfolio-item" data-category="editorial">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Avant-Garde</h4>
+                        <p>Creative artistic expression</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 8 -->
+                <div class="portfolio-item" data-category="natural">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Everyday Elegance</h4>
+                        <p>Professional daytime look</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="pricing">
-        <h2>Pricing</h2>
-        <p>Competitive pricing for outstanding service.</p>
+
+    <!-- ========================================
+         Pricing Section
+         ======================================== -->
+    <section class="pricing fade-in" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Course Pricing</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">
+                Choose the package that best fits your goals and budget
+            </p>
+            
+            <div class="pricing-grid">
+                <!-- Essentials Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Essentials</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                        </div>
+                        <p class="pricing-duration">One-time payment</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Modules 1-3 (Foundations to Eye Artistry)</li>
+                            <li><i class="fas fa-check"></i> 24 hours of instruction</li>
+                            <li><i class="fas fa-check"></i> Basic kit included</li>
+                            <li><i class="fas fa-check"></i> Certificate of completion</li>
+                            <li><i class="fas fa-check"></i> 3 months email support</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" class="btn btn-outline">Get Started</a>
+                </div>
+                
+                <!-- Professional Package (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">1,899</span>
+                        </div>
+                        <p class="pricing-duration">One-time payment</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> All 6 modules (Complete program)</li>
+                            <li><i class="fas fa-check"></i> 48 hours of instruction</li>
+                            <li><i class="fas fa-check"></i> Professional kit included</li>
+                            <li><i class="fas fa-check"></i> Certificate of completion</li>
+                            <li><i class="fas fa-check"></i> 1 year mentorship</li>
+                            <li><i class="fas fa-check"></i> Portfolio shoot included</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" class="btn btn-primary">Enroll Now</a>
+                </div>
+                
+                <!-- Master Class Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Master Class</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">2,999</span>
+                        </div>
+                        <p class="pricing-duration">One-time payment</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> All 6 modules plus advanced techniques</li>
+                            <li><i class="fas fa-check"></i> 72 hours of instruction</li>
+                            <li><i class="fas fa-check"></i> Premium pro kit included</li>
+                            <li><i class="fas fa-check"></i> Certificate of completion</li>
+                            <li><i class="fas fa-check"></i> Lifetime mentorship</li>
+                            <li><i class="fas fa-check"></i> 3 portfolio shoots included</li>
+                            <li><i class="fas fa-check"></i> Business setup consultation</li>
+                            <li><i class="fas fa-check"></i> Job placement assistance</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" class="btn btn-outline">Go Premium</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="booking">
-        <h2>Book an Appointment</h2>
-        <p>Contact us to schedule your session.</p>
+
+    <!-- ========================================
+         Booking/Contact Section
+         ======================================== -->
+    <section class="booking fade-in" id="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Session</h2>
+            <div class="title-underline"></div>
+            
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3 class="section-title">Get In Touch</h3>
+                    <div class="title-underline"></div>
+                    <p>
+                        Ready to start your journey as a professional makeup artist? Contact us today to schedule 
+                        a consultation or enroll in our next course. We're here to answer all your questions.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@beautymakeup.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Beauty Street, New York, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="contact-form" aria-label="Contact form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name *" required aria-label="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email *" required aria-label="Your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone *" required aria-label="Your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="course" name="course" required aria-label="Select course">
+                                <option value="">Select Course *</option>
+                                <option value="essentials">Essentials Package</option>
+                                <option value="professional">Professional Package</option>
+                                <option value="masterclass">Master Class Package</option>
+                                <option value="consultation">Free Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message *" required aria-label="Your message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        
+                        <div id="form-message" class="form-message" role="alert" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="footer">
-        <h2>Follow Us</h2>
-    </section>
-    <section id="gallery-modal">
-        <h2>Gallery</h2>
-        <p>Our beautiful highlights.</p>
-    </section>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Oksana Prudyus</h3>
+                    <p>
+                        Empowering aspiring makeup artists with professional training, industry insights, 
+                        and the confidence to launch successful careers in the beauty industry.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#program">Course Program</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#booking">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><i class="fas fa-graduation-cap"></i> <a href="#program">Makeup Courses</a></li>
+                        <li><i class="fas fa-users"></i> <a href="#program">Private Training</a></li>
+                        <li><i class="fas fa-palette"></i> <a href="#portfolio">Bridal Makeup</a></li>
+                        <li><i class="fas fa-star"></i> <a href="#portfolio">Special Events</a></li>
+                        <li><i class="fas fa-briefcase"></i> <a href="#program">Business Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Beauty Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@beautymakeup.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+                        <li><i class="fas fa-clock"></i> Sat: 10AM - 4PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beauty Makeup by Oksana Prudyus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         Gallery Modal
+         ======================================== -->
+    <div class="modal" id="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="modal-caption">
+        <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+        
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="" style="display: none;">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+        
+        <button class="modal-nav modal-prev" id="modal-prev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-nav modal-next" id="modal-next" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
